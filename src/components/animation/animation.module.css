@@ -12,7 +12,7 @@
 .wrap {
     width: 60%;
     overflow: hidden;
-    height: 100vw;
+    height: 100vh;
     position: relative;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .animation {
-    padding-top: 45vw;
+    padding-top: 18em;
     width: 100%;
     /*position: absolute;*/
 }

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/remote-control-switch/static/css/main.729ca7d2.css",
+    "main.js": "/remote-control-switch/static/js/main.28983a1a.js",
+    "index.html": "/remote-control-switch/index.html",
+    "main.729ca7d2.css.map": "/remote-control-switch/static/css/main.729ca7d2.css.map",
+    "main.28983a1a.js.map": "/remote-control-switch/static/js/main.28983a1a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.729ca7d2.css",
+    "static/js/main.28983a1a.js"
+  ]
+}

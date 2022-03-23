@@ -1,0 +1,203 @@
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /*flex-direction: column;*/
+    /*justify-content: space-around;*/
+    align-items: center;
+    background-color: #b1e1e2;
+    animation: sky linear 20s infinite;
+}
+
+.wrap {
+    width: 60%;
+    overflow: hidden;
+    height: 100vw;
+    position: relative;
+}
+
+.info {
+    width: 40%;
+}
+
+.animation {
+    padding-top: 45vw;
+    width: 100%;
+    /*position: absolute;*/
+}
+
+.sky {
+    position: absolute;
+    width: 100%;
+}
+
+.sun {
+    width: 20%;
+    position: absolute;
+    margin-top: -30%;
+    margin-left: 40%;
+    transform-origin: center 250%;
+    animation: sun linear 20s infinite;
+}
+
+.cloud1 {
+    width: 15%;
+    position: absolute;
+    margin-top: -20%;
+    animation: flow linear 10s infinite;
+}
+
+.cloud2 {
+    width: 25%;
+    position: absolute;
+    margin-top: -10%;
+    animation: flow linear 20s infinite;
+}
+
+.circle {
+    width: 28%;
+    position: absolute;
+    opacity: 0.7;
+    margin-left: 30%;
+    margin-top: -10%;
+    animation: rotation linear 20s infinite;
+}
+
+.night {
+    width: 100%;
+    position: absolute;
+}
+
+.day {
+    width: 100%;
+    position: absolute;
+    animation: day linear 20s infinite;
+}
+
+.people {
+    position: absolute;
+    width: 100%;
+    animation: day linear 20s infinite;
+}
+
+.man {
+    width: 7%;
+    position: absolute;
+    /*margin-top: 10.5em;*/
+    margin-top: 21.5%;
+    margin-left: 5em;
+    animation: flow linear 20s infinite;
+}
+
+.family {
+    width: 7%;
+    position: absolute;
+    margin-top: 18%;
+    animation: flow linear 20s infinite;
+}
+
+/* sun keyframe */
+@keyframes sun {
+    0% {
+        opacity: 0;
+        transform: rotate(-90deg);
+    }
+    25% {
+        opacity: 1;
+        transform: rotate(-30deg);
+    }
+    50% {
+        opacity: 1;
+        transform: rotate(30deg);
+    }
+    75% {
+        opacity: 0;
+        transform: rotate(90deg);
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(-90deg);
+    }
+}
+
+/* night keyframe */
+@keyframes day {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* 사람과 구름을 오른쪽으로 이동시키는 키프레임 */
+@keyframes flow {
+    0% {
+        left: 0%;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        left: 90%;
+        opacity: 0;
+    }
+}
+
+/* circle rotation */
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 배경 하늘색을 변경하는 키프레임 */
+@keyframes sky {
+    0% {
+        background-color: #b08fcc;
+    }
+    25% {
+        background-color: #b1e1e2;
+    }
+    50% {
+        background-color: #fcd2e2;
+    }
+    75% {
+        background-color: #636888;
+    }
+    100% {
+        background-color: #b08fcc;
+    }
+}
+
+@media (max-width: 750px) {
+    .main {
+        flex-direction: column;
+    }
+    .wrap {
+        width: 100%;
+        height: 70vw;
+    }
+    .info {
+        width: 100%;
+    }
+    .animation {
+        padding-top: 40vw;
+    }
+}

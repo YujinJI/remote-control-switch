@@ -1,0 +1,64 @@
+@value iconLightPink, iconDarkPink, '../../common/colors.css';
+
+.edit_form {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    top: 5em;
+}
+
+.wrap {
+    margin: auto;
+    width: 20em;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1em 2em 2em 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.close_wrap {
+    width: 100%;
+    text-align: right;
+}
+
+.close {
+    text-align: right;
+    background-color: white;
+    border: 0;
+    margin-right: -1.5em;
+    cursor: pointer;
+}
+
+.icon {
+    color: #d75873;
+    font-size: 2em;
+    text-align: right;
+}
+
+.slider_wrap {
+    margin-top: 2em;
+}
+
+.radio_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.p {
+    margin-right: 9px;
+}
+
+.button {
+    margin: 3em auto auto auto;
+    width: 10em;
+    color: white;
+    font-weight: bold;
+    background-color: #d75873;
+    border: 1px solid #d74665;
+    border-radius: 6px;
+    padding: 0.4em 1em;
+    cursor: pointer;
+}

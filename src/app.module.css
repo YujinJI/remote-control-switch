@@ -1,0 +1,10 @@
+@value swLightGray, swMint from './common/colors.css';
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100%;
+}
+

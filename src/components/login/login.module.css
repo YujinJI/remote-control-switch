@@ -1,0 +1,90 @@
+.login {
+    width: 340px;
+    margin: auto;
+}
+
+.ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.img_wrap {
+    width: 5em;
+    margin: 2em auto;
+}
+
+.img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.input_wrap {
+    /*background-color: #f6f8fa;*/
+    background-color: #F4EAD9;
+    padding: 1.5em;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+}
+
+.p {
+    margin: 0;
+    padding: 1em 0 0.5em 0;
+    text-align: left;
+}
+
+.input {
+    width: 100%;
+    padding: 5px 12px;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+    line-height: 20px;
+    -webkit-appearance: none;
+}
+
+.button {
+    width: 100%;
+    background-color: #DBA576;
+    border: 1px solid #d99e6c;
+    padding: 5px 12px;
+    line-height: 20px;
+    margin: 1em 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+.button:hover {
+    background-color: rgba(219, 165, 118, 0.7);
+}
+
+.p2 {
+    margin: 0 0 1em;
+    font-size: 0.9em;
+    color: #595959;
+}
+
+.icon {
+    width: 2em;
+    height: 2em;
+    object-fit: cover;
+}
+
+.google {
+    width: 4em;
+    height: 4em;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    /*padding: 10px;*/
+    padding-top: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.link {
+    color: #0969da;
+    cursor: pointer;
+}

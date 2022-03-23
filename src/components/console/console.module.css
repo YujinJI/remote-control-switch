@@ -1,0 +1,104 @@
+@value swPuple, swLightPuple, swMint from '../../common/colors.css';
+
+.console {
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.plus_wrap {
+    position: fixed;
+    bottom: 2em;
+    right: 1em;
+}
+
+.add_button {
+    position: sticky;
+    float: right;
+    width: 4em;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.add_button.act {
+    transform: rotate(45deg);
+    transition: all 1s;
+}
+
+.plus {
+    width: 100%;
+    height: 100%;
+    color: swPuple;
+    transition: all 1s;
+}
+
+.plus:hover {
+    color: swLightPuple;
+}
+
+.add_form {
+    background-color: white;
+    width: 20em;
+    position: absolute;
+    transform: translate(-17em, 20em);
+    padding: 3em;
+    transition: all 1s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.add_form.act {
+    transform: translate(-17em, -18em);
+    transition: all 1s;
+}
+
+.input {
+    margin-bottom: 1.5em;
+    width: 15em;
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid #cdcdcd;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.button {
+    width: 7em;
+    padding: 0.8em 1em;
+    border: 0;
+    background-color: swMint;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.device_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 3em;
+}
+
+@media (max-width: 750px) {
+    .device_wrap {
+        flex-direction: column;
+    }
+    .add_button {
+        width: 5em;
+    }
+}

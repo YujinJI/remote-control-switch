@@ -28,7 +28,7 @@ const Login = ({authService}) => {
     if (email !== "" && password !== "") {
       await authService.signIn(email, password).then(goToConsole,
         reason => {
-          alert("아이디 또는 비밀번호가 옳바르지 않습니다.");
+          alert("아이디 또는 비밀번호가 올바르지 않습니다.");
         });
     }
   };
@@ -36,7 +36,7 @@ const Login = ({authService}) => {
   const onGoogleSignIn = async () => {
     await authService.signInWithGoogle().then(goToConsole,
       reason => {
-        alert("구글 인증 정보가 옳바르지 않습니다.");
+        alert("구글 인증 정보가 올바르지 않습니다.");
       });
   };
 

@@ -48,3 +48,8 @@
 주변의 밝기와 상관없이 사용자가 스위치를 on/off 하고 싶은 경우, 수정화면에서 기준값을 0으로 설정하면 스위치가 off, 1000으로 설정하면 스위치가 on 됩니다.
 
 ---
+
+## 반응형
+<p align="center">
+    <img src="public/images/capture/반응형.gif" width="200px">
+</p>
